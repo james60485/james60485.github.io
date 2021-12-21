@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta -->
+    <meta name="title" content="Hélène et Thomas Chassaing | Photographie">
+    <meta name="description" content="Reporters voyageurs à vélo. Travaux documentaires sur l'agriculture, l'énergie, les COPs, les changements climatiques, les luttes sociales, entre autres.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">    
+    <link rel="stylesheet" href="/css/custom.css">
+    <!-- Goatcounter analytics -->
+    <script data-goatcounter="https://helene-thomas-chassaing.goatcounter.com/count"
+        data-goatcounter-settings='{"no_events": true}' 
+        async src="//gc.zgo.at/count.js">
+    </script>
+    
+<title>Hélène et Thomas Chassaing | Photographie</title>
+
+  </head>
+  <body>
+    <span class="clearfix">
+        <a class="title" href="/index-fr.html">Hélène et Thomas Chassaing</a>
+        <span class="lang float-right"><a href="/index-fr.html">fr</a>&thinsp;/&thinsp;<a href="/index-en.html">en</a></span>
+        <i class="menuicon float-right" onclick="toggleMenu()"><svg viewBox="0 0 512 512"><path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"/></svg></i>
+        <div id="menu" class="menulist">
+            <a href="/blog-fr.html">BLOG</a>
+            <a href="/reportage-fr.html">TRAVAUX</a>
+            <a href="/contact-fr.html">CONTACT</a>
+            <a href="/boutique-fr.html">BOUTIQUE</a>
+            <a href="/about-fr.html">À PROPOS</a>
+            <a href="/donations-fr.html">DONS</a>
+        </div>
+        <span class="menulabel float-right">Menu</span>
+    </span>
+    <br>
+    <script>
+    function toggleMenu(){
+      var nav = document.getElementById('menu');
+      nav.classList.toggle('open-menulist');
+    }
+    </script>
+    <div class="content-wrapper">
+        
+        
+
+        
+<div class="img-text-flex">
+    <div>
+        <img class="animate image-margin frontpage-slides" src="/frontpage/index_img_1.jpg" alt="Hélène, Chili en vélo">
+        <img class="animate image-margin frontpage-slides" src="/frontpage/index_img_2.jpg" alt="Chili, le matin">
+        <img class="animate image-margin frontpage-slides" src="/frontpage/index_img_3.jpg" alt="Chez nous au Dakota">
+        <img class="animate image-margin frontpage-slides" src="/frontpage/index_img_4.jpg" alt="Thomas à Montauban">
+        <img class="animate image-margin frontpage-slides" src="/frontpage/index_img_5.jpg" alt="Crevée après 50 km">
+        <img class="animate image-margin frontpage-slides" src="/frontpage/index_img_6.jpg" alt="Prendre des nouvelles sur la route">
+        <img class="animate image-margin frontpage-slides" src="/frontpage/index_img_7.jpg" alt="Thomas et les argentiques">
+        <img class="animate image-margin frontpage-slides" src="/frontpage/index_img_8.jpg" alt="Hélène en chambre noire">
+    </div>
+    <div>
+        <p>Hélène et Thomas sont des cyclistes-photographes indépendants. Ce site expose l'intégralité de leurs travaux documentaires, soit plus de 7 000 images.<br><br>
+
+À leur début, deux sujets ont été projetés au festival du photojournalisme de Perpignan (Visa pour l’image) et un portfolio a été publié dans le supplément week-end du journal Le Monde. Certaines photographies sont distribuées par les agences Millennium Images et Sipa Press.<br><br>
+
+  La plupart des reportages concernent des sujets environnementaux et économiques : agriculture vivrière en Afrique de l’Ouest et travailleurs agricoles dans l'agriculture intensive en Espagne ou aux USA.<br><br>
+
+Et il y a aussi : les sans-abris et les déplacements provoqués par la globalisation, la destruction des écosystèmes et leur défense, les COP depuis l'Accord de Paris en 2015, les manifestations en France sous trois présidents successifs, le travail et la vie sur une année complète dans une petite ferme laitière de type familial comme il y en a encore beaucoup dans l’hexagone. D'autres issus de leur Tour de France à vélo de 20 500 km sont en préparation et seront mis en ligne au fur et à mesure.<br><br>
+
+Les reportages sont détaillés et non simplifiés. Il sont de ceux que nous croyons dignes d'intérêt. On en découvrira aussi quelques-uns qui sont faits pour s'amuser.<br><br>
+
+Vancouver, Avril 2021 - Jim Latteier (concepteur du site, traducteur des textes et soutien de toujours. Merci à lui !)</p>
+    </div>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("animate");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 8}
+  x[myIndex-1].style.display = "block";
+  x[myIndex-1].style.margin = "var(-s2)";
+  setTimeout(carousel, 5000);
+}
+</script>
+
+
+        
+        
+        <footer>
+        
+            <span class="copyright">&copy;&nbsp;2021 Hélène et Thomas Chassaing&nbsp;|&nbsp;<a class="copyinfo" href="/information-fr.html">Mentions légales</a></span>
+        
+        </footer>
+    </div>
+  </body>
+</html>
