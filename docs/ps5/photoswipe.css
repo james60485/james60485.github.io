@@ -181,6 +181,39 @@
   color: #000;
   background-color: gray; }
 
+/* Pseudo button gives instructions to hide captions */
+button.pswp__button--hide-cap-button {
+  align-self: center;
+  margin: auto;
+  height: 1.5rem;
+  width: 60vw;
+  color: #000;
+  opacity: 0.9;
+  font-size: calc(0.6rem + 0.4vw);
+  overflow: visible; }
+
+/* Custom captions -- photoswipe.com/v5/docs/caption */
+.pswp__custom-caption {
+  display: block;
+  background: #fff;
+  font-size: calc(0.6rem + 0.4vw);
+  color: #000;
+  opacity: 0.9;
+  width: calc(100% - 32px);
+  max-width: 1000px;
+  padding: 2px 8px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.pswp__custom-caption a {
+  color: #fff;
+  text-decoration: underline;
+}
+.hidden-caption-content {
+  display: none;
+}
 
 /*
 	stretched thumbnail or div placeholder element (see below)
