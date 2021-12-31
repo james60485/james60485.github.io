@@ -145,8 +145,8 @@ h3 {
    color: #808080;
 }
 .menuicon {
-   width: 1rem;
-   height: 1rem;
+   width: 0.9rem;
+   height: 0.9rem;
    margin-top: 0.4rem;
    color: #808080;
    opacity: 0.5;
@@ -321,3 +321,24 @@ h3 {
 .sqar { width: 228px; height: 171px; }
 .norm { width: 228px; height: 152px; }
 .wide { width: 228px; height: 76px; }
+
+/* Masonry */
+
+.masonry img {
+   display: block;
+}
+.masonry img:hover {
+   filter: brightness(75%);
+}
+.masonry figcaption {
+   display: none;
+}
+
+/* Media queries for small screens */
+
+@media only screen and (max-width: 500px) {
+  .menulabel {
+    display: none;
+  }
+}
+
