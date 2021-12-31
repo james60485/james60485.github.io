@@ -24,7 +24,9 @@
     <span class="clearfix">
         <a class="title" href="/index-fr.html">Hélène et Thomas Chassaing</a>
         <span class="lang float-right"><a href="/HTC_GR_220-fr.html">fr</a>&thinsp;/&thinsp;<a href="/HTC_GR_220-en.html">en</a></span>
-        <svg class="menuicon float-right" onclick="toggleMenu()" viewBox="0 0 10 10" width="0.75em" height="0.75em" stroke="currentColor" stroke-width="2"><line x1="0" y1="1" x2="10" y2="1" /><line x1="0" y1="5" x2="10" y2="5" /><line x1="0" y1="9" x2="10" y2="9" /></svg>
+        <svg class="menuicon float-right" onclick="toggleMenu()" viewBox="0 0 10 10" width="0.75em" height="0.75em" stroke="currentColor" stroke-width="2">
+            <path d="M0,1 10,1 M0,5 10,5 M0,9 10,9" />
+        </svg>
         <div id="menu" class="menulist">
             <a href="/blog-fr.html">BLOG</a>
             <a href="/reportage-fr.html">TRAVAUX</a>
@@ -1675,8 +1677,8 @@ const options = {
   else if (vis == 'none') {caption.style.display = 'block';}
   },
 
-  pswpModule: 'https://james60485.github.io/ps5/photoswipe.esm.js'
-//  pswpModule: 'http://localhost:8000/ps5/photoswipe.esm.js'
+//  pswpModule: 'https://www.h-t-chassaing.com/ps5/photoswipe.esm.js'
+  pswpModule: 'http://localhost:8000/ps5/photoswipe.esm.js'
 };
 
 const lightbox = new PhotoSwipeLightbox(options);
