@@ -198,16 +198,18 @@ button.pswp__button--hide-cap-button {
 /* Custom captions -- photoswipe.com/v5/docs/caption */
 .pswp__custom-caption {
   display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  padding: 2px 8px;
   background: #fff;
   font-size: calc(0.6rem + 0.4vw);
   color: #000;
   opacity: 0.9;
+  height: 23%;
   width: calc(100% - 32px);
   max-width: 1000px;
-  padding: 2px 8px;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
+  overflow-y: auto;
   transform: translateX(-50%);
 }
 .pswp__custom-caption a {
