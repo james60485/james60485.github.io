@@ -60,7 +60,7 @@
 }
 
 .pswp__bg {
-  opacity: 1 !important;
+  opacity: 0.005;
 	background: var(--pswp-bg);
 }
 
@@ -253,9 +253,9 @@ and show (for example fade in) when PhotoSwipe is opened
 /* Pseudo button gives instructions to hide captions */
 button.pswp__button--hide-cap-button {
   align-self: center;
-  margin: auto;
+  margin-right: auto;
   height: 1.5rem;
-  width: 50vw;
+  width: 40vw;
   color: #000;
   opacity: 0.9;
   font-size: calc(0.6rem + 0.4vw);
