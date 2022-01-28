@@ -254,7 +254,7 @@ and show (for example fade in) when PhotoSwipe is opened
 button.pswp__button--hide-cap-button {
   align-self: center;
   margin-right: auto;
-  height: 1.5rem;
+  height: 2rem;
   width: 40vw;
   color: #000;
   opacity: 0.9;
