@@ -257,7 +257,8 @@ button.pswp__button--hide-cap-button {
   height: 2rem;
   width: 40vw;
   color: #000;
-  opacity: 0.9;
+  background: #fff;
+  opacity: 0.5;
   font-size: calc(0.6rem + 0.4vw);
   overflow: visible; }
 
@@ -271,7 +272,7 @@ button.pswp__button--hide-cap-button {
   background: #fff;
   font-size: calc(0.6rem + 0.4vw);
   color: #000;
-  opacity: 0.9 !important;
+  opacity: 0.85 !important;
   height: 23%;
   width: calc(100% - 32px);
   max-width: 1000px;
