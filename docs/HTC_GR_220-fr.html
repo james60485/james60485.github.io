@@ -1648,8 +1648,8 @@ function jumpToTopPromise () {
 }
 
 const options = {
-  gallery:'#gallery--with-custom-caption',
-  children:'.pswp-gallery__item',
+  gallery: '#gallery--with-custom-caption',
+  children: '.pswp-gallery__item',
   showHideAnimationType: 'none',
   zoomAnimationDuration: false,
   zoom: false,
@@ -1678,12 +1678,12 @@ const options = {
   else if (vis == 'none') {caption.style.display = 'block';}
   },
 
-  pswpModule: 'https://james60485.github.io/ps5/photoswipe.esm.min.js'
-//  pswpModule: 'http://localhost:8000/ps5/photoswipe.esm.min.js'
+  pswpModule: () => import('/ps5/photoswipe.esm.min.js')
 };
 
 const lightbox = new PhotoSwipeLightbox(options);
 lightbox.on('uiRegister', function() {
+
   lightbox.pswp.ui.registerElement({
     name: 'custom-caption',
     isButton: false,
@@ -1704,6 +1704,7 @@ lightbox.on('uiRegister', function() {
       });
     }
   });
+
   // display a pseudo button with message to toggle caption
   lightbox.pswp.ui.registerElement({
     name: 'hide-cap-button',
