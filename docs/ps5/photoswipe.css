@@ -266,14 +266,14 @@ button.pswp__button--hide-cap-button {
 .pswp__custom-caption {
   display: block;
   position: absolute;
+  top: 70%;
   left: 50%;
-  bottom: 0;
   padding: 2px 8px;
   background: #fff;
   font-size: calc(0.6rem + 0.4vw);
   color: #000;
   opacity: 0.85 !important;
-  height: 23%;
+  height: 24%;
   width: calc(100% - 32px);
   max-width: 1000px;
   overflow-y: auto;
