@@ -253,7 +253,7 @@ and show (for example fade in) when PhotoSwipe is opened
 /* Pseudo button gives instructions to hide captions */
 button.pswp__button--hide-cap-button {
   align-self: center;
-  margin-right: auto;
+  margin-right: 25%;
   height: 2rem;
   width: 40vw;
   color: #000;
@@ -444,9 +444,8 @@ div.pswp__img--placeholder,
 */
 .pswp__counter {
   height: 30px;
-  margin: 15px 0 0 20px;
-  font-size: 14px;
-  line-height: 30px;
+  margin: 15px 0 0 15px;
+  font-size: calc(0.6rem + 0.4vw);
   color: var(--pswp-icon-color);
   text-shadow: 1px 1px 3px var(--pswp-icon-color-secondary);
   opacity: 0.85;
