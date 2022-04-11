@@ -94,6 +94,7 @@
 .pswp__zoom-wrap {
 	width: auto;
 	height: auto;
+	padding: 0 var(--s1);
 }
 
 .pswp--click-to-zoom.pswp--zoom-allowed .pswp__img {
@@ -272,7 +273,7 @@ button.pswp__button--hide-cap-button {
   position: absolute;
   top: 80%;
   left: 50%;
-  padding: 2px 8px;
+  padding: 0 var(--s-2);
   background: #fff;
   font-size: calc(0.6rem + 0.4vw);
   color: #000;
@@ -347,7 +348,6 @@ div.pswp__img--placeholder,
   background: #aaa;
   opacity: 0.75 !important;
   top: 50%;
-  margin-top: -50px;
 }
 
 .pswp__button--arrow:disabled {
