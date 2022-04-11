@@ -49,6 +49,10 @@
 
 .pswp img {
   max-width: none;
+  border-left: calc(20px + 1vw);
+  border-right: calc(20px + 1vw);
+  border-style: solid;
+  border-color: #FFF;
 }
 
 .pswp--open {
