@@ -94,7 +94,6 @@
 .pswp__zoom-wrap {
 	width: auto;
 	height: auto;
-	padding: 0 var(--s1);
 }
 
 .pswp--click-to-zoom.pswp--zoom-allowed .pswp__img {
