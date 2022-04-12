@@ -272,7 +272,8 @@ button.pswp__button--hide-cap-button {
   position: absolute;
   top: 80%;
   left: 50%;
-  padding: 0 var(--s-2);
+  padding-left: 1rem;
+  padding-right: 2vw;
   background: #fff;
   font-size: calc(0.6rem + 0.4vw);
   color: #000;
