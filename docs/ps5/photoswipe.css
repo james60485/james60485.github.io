@@ -292,6 +292,12 @@ button.pswp__button--hide-cap-button {
   display: none;
 }
 
+/* Raise caption on small screens */
+@media only screen and (max-width: 500px) {
+  .pswp__custom-caption {
+     top: 65%;
+  }
+}
 
 /*
 	div element that matches size of large image,
