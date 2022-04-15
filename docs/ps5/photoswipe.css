@@ -3,7 +3,7 @@
 .pswp {
   --pswp-bg: #FFF;
   --pswp-placeholder-bg: #222;
-
+  
 
   --pswp-root-z-index: 100000;
   
@@ -154,6 +154,7 @@
   pointer-events: auto;
 }
 
+
 /*
 
   PhotoSwipe UI
@@ -253,8 +254,7 @@ and show (for example fade in) when PhotoSwipe is opened
 	outline: 0;
 }
 
-
-/* Pseudo button gives instructions to hide captions */
+/* pseudo button gives instructions to hide captions */
 button.pswp__button--hide-cap-button {
   align-self: center;
   margin-right: 25%;
@@ -266,7 +266,8 @@ button.pswp__button--hide-cap-button {
   font-size: calc(0.6rem + 0.4vw);
   overflow: visible; }
 
-/* Custom captions -- photoswipe.com/v5/docs/caption */
+/* Custom captions  */
+
 .pswp__custom-caption {
   display: block;
   position: absolute;
@@ -279,7 +280,7 @@ button.pswp__button--hide-cap-button {
   color: #000;
   opacity: 0.85 !important;
   height: calc(20% - 20px);
-  width: auto;
+  width: 60 vw;
   max-width: 1000px;
   overflow-y: auto;
   transform: translateX(-50%);
