@@ -280,7 +280,6 @@ button.pswp__button--hide-cap-button {
   color: #000;
   opacity: 0.85 !important;
   height: calc(20% - 20px);
-  width: 60 vw;
   max-width: 1000px;
   overflow-y: auto;
   transform: translateX(-50%);
@@ -293,7 +292,7 @@ button.pswp__button--hide-cap-button {
   display: none;
 }
 
-/* Raise caption on small screens */
+/* raise caption on small screens */
 @media only screen and (max-width: 500px) {
   .pswp__custom-caption {
      top: 65%;
