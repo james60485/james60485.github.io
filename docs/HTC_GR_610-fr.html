@@ -757,6 +757,10 @@ lightbox.on('uiRegister', function() {
             // get caption from element with class hidden-caption-content
             captionHTML = hiddenCaption.innerHTML;
           }
+           // change height to auto for short captions
+          let wordCount = captionHTML.split(' ').length;
+          if (wordCount < 40) {el.style.height = 'auto';}
+          else {el.style.height = 'calc(20% - 20px)';}
         }
         el.innerHTML = captionHTML || '';
       });
