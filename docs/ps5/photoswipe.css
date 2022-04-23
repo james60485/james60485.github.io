@@ -356,6 +356,10 @@ div.pswp__img--placeholder,
   top: 50%;
 }
 
+.pswp__button--arrow:hover {
+  background-color: #FFF;
+}
+
 .pswp__button--arrow:disabled {
   display: none;
   cursor: default;
