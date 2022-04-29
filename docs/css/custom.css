@@ -212,6 +212,8 @@ h3 {
 /* Blog Page */
 
 .zoom {
+   width: 450px;
+   height: 300px;
    transition: transform .2s;
 }
 .zoom:hover {
@@ -220,7 +222,7 @@ h3 {
    transform: scale(1.5);
 }
 .blog-post a {
-  text-decoration: underline;
+   text-decoration: underline;
 }
 
 /* Donation Page */
