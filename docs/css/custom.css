@@ -211,18 +211,8 @@ h3 {
 
 /* Blog Page */
 
-.zoom {
-   width: 450px;
-   height: 300px;
-   transition: transform .2s;
-}
-.zoom:hover {
-   -ms-transform: scale(1.5);
-   -webkit-transform: scale(1.5);
-   transform: scale(1.5);
-}
 .blog-post a {
-   text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Donation Page */
