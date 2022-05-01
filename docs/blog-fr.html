@@ -48,14 +48,10 @@
         
         
 
-        
-
     <div class="img-text-flex">
-        <div>
-        <a href="/blog/blog_img_19.jpg">
-            <img class="image-margin" src="/blog/blog_img_19.jpg" alt="Un mot sur les logiciels libres">
-        </a>
-        </div>
+      <div class="image-container">
+        <div class="image detail-view image-margin" style="background-image: url(/blog/blog_img_19.jpg);"></div>
+      </div>
         <div>
             <h2><em>Un mot sur les logiciels libres</em></h2>
             <h1>Posté par&nbsp;Jim Latteier,&nbsp;2022-04-26</h1>
@@ -1386,17 +1382,65 @@ Donc, s'il ne se trompe pas, tout n’est pas fini comme nous avions pu le pense
             
         </div>
     </div>
-    <script type="text/javascript">
+  <script type="text/javascript">
+
+    (function() {
+  // Get all images with the `detail-view` class
+  var zoomBoxes = document.querySelectorAll('.detail-view');
+
+  // Extract the URL
+  zoomBoxes.forEach(function(image) {
+    var imageCss = window.getComputedStyle(image, false),
+      imageUrl = imageCss.backgroundImage
+                         .slice(4, -1).replace(/['"]/g, '');
+
+    // Get the original source image
+    var imageSrc = new Image();
+    imageSrc.onload = function() {
+      var imageWidth = imageSrc.naturalWidth,
+          imageHeight = imageSrc.naturalHeight,
+          ratio = imageHeight / imageWidth;
+
+      // Adjust the box to fit the image and to adapt responsively
+      var percentage = ratio * 100 + '%';
+      image.style.paddingBottom = percentage;
+
+      // Zoom and scan on mousemove
+      image.onmousemove = function(e) {
+        // Get the width of the thumbnail
+        var boxWidth = image.clientWidth,
+            // Get the cursor position, minus element offset
+            x = e.pageX - this.offsetLeft,
+            y = e.pageY - this.offsetTop,
+            // Convert coordinates to % of elem. width & height
+            xPercent = x / (boxWidth / 100) + '%',
+            yPercent = y / (boxWidth * ratio / 100) + '%';
+
+        // Update styles w/actual size
+        Object.assign(image.style, {
+          backgroundPosition: xPercent + ' ' + yPercent,
+          backgroundSize: imageWidth + 'px'
+        });
+      };
+
+      // Reset when mouse leaves
+      image.onmouseleave = function(e) {
+        Object.assign(image.style, {
+          backgroundPosition: 'center',
+          backgroundSize: 'cover'
+        });
+      };
+    }
+    imageSrc.src = imageUrl;
+  });
+})();
+
     function readMore1() {
         document.querySelector('#short-blog-1').style.display = 'none';
         document.querySelector('#full-blog-1').style.display = '';
     }
-    </script>
+  </script>
     <br>
-
-
-
-        
         
         <footer>
         

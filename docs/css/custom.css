@@ -211,6 +211,17 @@ h3 {
 
 /* Blog Page */
 
+.image-container:hover {
+  background-color: #FFF;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: crosshair;
+  display: block;
+}
+
 .blog-post a {
   text-decoration: underline;
 }
