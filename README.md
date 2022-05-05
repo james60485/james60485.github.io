@@ -3,9 +3,6 @@
 
 # HTC-PS5-DEMO
 
-Ce site est une démo de le site h-t-chassaing.com utilisant le Photoswipe 5.0 beta.
+This is a test site for h-t-chassaing.com. It contains only a few features of the main site.
 
-Une seule galerie est démontrée, celle de COP22. Rechercher dans Travaux, et ensuite De COP en COP, puis COP22 et puis Reportage.
-
-Aucun des autres liens du menu ne fonctionne.
-
+It is meant to communicate between the developer (me) and the client (Helene and Thomas Chassaing).
