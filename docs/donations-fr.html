@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta -->
+    <meta name="title" content="Hélène et Thomas Chassaing | Photographie">
+    <meta name="description" content="Reporters voyageurs à vélo. Travaux documentaires sur l'agriculture, l'énergie, les COPs, les changements climatiques, les luttes sociales, entre autres.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">    
+    <link rel="stylesheet" href="/css/custom.css">
+    
+<title>Hélène et Thomas Chassaing | Photographie</title>
+
+  </head>
+  <body>
+    <span class="clearfix">
+        <a class="title" href="/index-fr.html">Hélène et Thomas Chassaing</a>
+        <span class="lang float-right"><a href="/donations-fr.html">fr</a>&thinsp;/&thinsp;<a href="/donations-en.html">en</a></span>
+        <svg class="menuicon float-right" onclick="toggleMenu()" viewBox="0 0 10 10" width="0.75em" height="0.75em" stroke="currentColor" stroke-width="2">
+            <path d="M0,1 10,1 M0,5 10,5 M0,9 10,9" />
+        </svg>
+        <div id="menu" class="menulist">
+            <a href="/blog-fr.html">BLOG</a>
+            <a href="/reportage-fr.html">TRAVAUX</a>
+            <a href="/contact-fr.html">CONTACT</a>
+            <a href="/boutique-fr.html">BOUTIQUE</a>
+            <a href="/about-fr.html">À PROPOS</a>
+            <a href="/donations-fr.html">DONS</a>
+        </div>
+        <span class="menulabel float-right">Menu</span>
+    </span>
+    <br>
+    <script>
+    function toggleMenu(){
+      var nav = document.getElementById('menu');
+      nav.classList.toggle('open-menulist');
+    }
+    </script>
+    <div class="content-wrapper">
+        
+        
+
+        
+<!-- Load Stripe.js  -->
+<script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+<script src="https://js.stripe.com/v3"></script>
+
+<div class="donations center">
+    
+<p><h4>Dons</h4></p>
+
+<p>Nous avons choisi de présenter gratuitement ce travail documentaire réalisé en autoproduction depuis une quinzaine d’années pour partager avec le plus grand nombre. Nous pensons qu’il peut intéresser les personnes qui aiment l’histoire, la géographie, la photographie, les voyages à vélo, etc., et qui portent une attention particulière aux luttes sociales et environnementales. Aussi il nous semble que cela peut aider à éclairer les temps présents et que laisser ce genre de trace pour les générations futures n’est pas vain.</p>
+
+<p>Si vous êtes content que ce site existe et que vous avez une âme de mécène, cela commence ici à partir de un euro.</p>
+
+<p>Pour ceux qui le souhaitent vous pouvez faire un don unique ou bien prendre un abonnement. L’idéal serait d’avoir de nombreux abonnements avec des petites sommes. Notez que nous ne tenons pas à recevoir de l'argent d'entreprises, de partis politiques, de syndicats ou d'associations et que le montant maximal d'un don ou d’un abonnement est fixé à 1 000 euros.</p>
+
+<p>Notre "Business Model" comme on nous demande souvent serait (schématiquement) le suivant : si à terme nous avons 300 personnes qui s'abonnent chacune pour 1 euro par mois, notre petite entreprise ne connaîtra pas la crise !</p>
+
+<p>Vos contributions, s'il y en a, seront dévolues à la production de nouveaux reportages (frais de voyage, achat ou entretien du matériel) et à la maintenance du site. Voyager à vélo ne coûte pas bien cher, nous avons toujours réussi à le faire, et nous continuerons si "la Force" est avec nous.</p>
+
+<p>De nos jours il existe de nombreuses plateformes de financement participatif pour les créateurs (telles que Tippee, Liberapay, Buy me a coffee, etc.). Elles vendent un portail, une vitrine, et toutes utilisent les services d'entreprises de paiement en ligne.</p>
+
+<p>Nous avons décidé de nous passer d'intermédiaire et d'utiliser directement Stripe. C'est une plateforme de paiement en ligne des plus importantes et des plus sécurisées qui fonctionne avec plusieurs devises.</p>
+
+<p>Il est possible de fonctionner avec Paypal pour ceux qui préfèrent et qui y ont déjà un compte.</p>
+
+    <span class="donation-btn-group">
+        <span>
+            <button class="stripe-btn" id="checkout-button-price_1Iha5JHSkTK1ylzKQNXQU3BA" role="link" type="button">€1.00</button>
+            <button class="stripe-btn" id="checkout-button-price_1Iz5S8HSkTK1ylzK0mJ0FhVy" role="link" type="button">€2.00</button>
+            <button class="stripe-btn" id="checkout-button-price_1Iha5ZHSkTK1ylzKy2R2OpvL" role="link" type="button">€5.00</button>
+            <button class="stripe-btn" id="checkout-button-price_1Iyjk7HSkTK1ylzK5W1O9waz" role="link" type="button">€10.00</button>
+            <button class="stripe-btn" id="checkout-button-price_1Iz5YyHSkTK1ylzKKtRgckWG" role="link" type="button">€20.00</button>
+            <button class="stripe-btn" id="checkout-button-price_1Iha6MHSkTK1ylzKLQHRVDMv" role="link" type="button">€50.00</button>
+            <button class="stripe-btn"> 
+                <a style="color:white;" href="/subscribe-fr.html">S'abonner</a>
+            </button>
+        </span>
+        <form action="https://www.paypal.com/donate" method="post">
+            <input type="hidden" name="hosted_button_id" value="JDMLMTGVB727U" />
+            <input type="image" style="padding: 0 1em 0 2em;" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png" border="0" name="submit" title="PayPal" alt="PayPal" />
+            <img alt="" border="0" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png" width="1" height="1" />
+        </form>
+    </span>
+</div>
+
+<!-- Stripe error message -->
+<div id="error-message"></div>
+
+<script>
+// One euro donation
+(function() {
+  var stripe = Stripe('pk_live_51Iei4gHSkTK1ylzKLiLkHdWPKmrwOSkY0OtvQ0KNam6i9YbJCDBXYY7gbbgvdsbau9v2Z5wkk3HcRRslQrmOuU3e00fjgqSLAz');
+  var checkoutButton = document.getElementById('checkout-button-price_1Iha5JHSkTK1ylzKQNXQU3BA');
+  checkoutButton.addEventListener('click', function () {
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1Iha5JHSkTK1ylzKQNXQU3BA', quantity: 1}],
+      mode: 'payment',
+      successUrl: "https://www.h-t-chassaing.com/stripe_success-fr.html",
+      cancelUrl: "https://www.h-t-chassaing.com/stripe_canceled-fr.html",
+    })
+    .then(function (result) {
+      if (result.error) {
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+
+// Two euro donation
+(function() {
+  var stripe = Stripe('pk_live_51Iei4gHSkTK1ylzKLiLkHdWPKmrwOSkY0OtvQ0KNam6i9YbJCDBXYY7gbbgvdsbau9v2Z5wkk3HcRRslQrmOuU3e00fjgqSLAz');
+  var checkoutButton = document.getElementById('checkout-button-price_1Iz5S8HSkTK1ylzK0mJ0FhVy');
+  checkoutButton.addEventListener('click', function () {
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1Iz5S8HSkTK1ylzK0mJ0FhVy', quantity: 1}],
+      mode: 'payment',
+      successUrl: "https://www.h-t-chassaing.com/stripe_success-fr.html",
+      cancelUrl: "https://www.h-t-chassaing.com/stripe_canceled-fr.html",
+    })
+    .then(function (result) {
+      if (result.error) {
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+
+// Five euro donation
+(function() {
+  var stripe = Stripe('pk_live_51Iei4gHSkTK1ylzKLiLkHdWPKmrwOSkY0OtvQ0KNam6i9YbJCDBXYY7gbbgvdsbau9v2Z5wkk3HcRRslQrmOuU3e00fjgqSLAz');
+  var checkoutButton = document.getElementById('checkout-button-price_1Iha5ZHSkTK1ylzKy2R2OpvL');
+  checkoutButton.addEventListener('click', function () {
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1Iha5ZHSkTK1ylzKy2R2OpvL', quantity: 1}],
+      mode: 'payment',
+      successUrl: "https://www.h-t-chassaing.com/stripe_success-fr.html",
+      cancelUrl: "https://www.h-t-chassaing.com/stripe_canceled-fr.html",
+    })
+    .then(function (result) {
+      if (result.error) {
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+
+// Ten euro donation
+(function() {
+  var stripe = Stripe('pk_live_51Iei4gHSkTK1ylzKLiLkHdWPKmrwOSkY0OtvQ0KNam6i9YbJCDBXYY7gbbgvdsbau9v2Z5wkk3HcRRslQrmOuU3e00fjgqSLAz');
+  var checkoutButton = document.getElementById('checkout-button-price_1Iyjk7HSkTK1ylzK5W1O9waz');
+  checkoutButton.addEventListener('click', function () {
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1Iyjk7HSkTK1ylzK5W1O9waz', quantity: 1}],
+      mode: 'payment',
+      successUrl: "https://www.h-t-chassaing.com/stripe_success-fr.html",
+      cancelUrl: "https://www.h-t-chassaing.com/stripe_canceled-fr.html",
+    })
+    .then(function (result) {
+      if (result.error) {
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+
+// Twenty euro donation
+(function() {
+  var stripe = Stripe('pk_live_51Iei4gHSkTK1ylzKLiLkHdWPKmrwOSkY0OtvQ0KNam6i9YbJCDBXYY7gbbgvdsbau9v2Z5wkk3HcRRslQrmOuU3e00fjgqSLAz');
+  var checkoutButton = document.getElementById('checkout-button-price_1Iz5YyHSkTK1ylzKKtRgckWG');
+  checkoutButton.addEventListener('click', function () {
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1Iz5YyHSkTK1ylzKKtRgckWG', quantity: 1}],
+      mode: 'payment',
+      successUrl: "https://www.h-t-chassaing.com/stripe_success-fr.html",
+      cancelUrl: "https://www.h-t-chassaing.com/stripe_canceled-fr.html",
+    })
+    .then(function (result) {
+      if (result.error) {
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+
+// Fifty euro donation
+(function() {
+  var stripe = Stripe('pk_live_51Iei4gHSkTK1ylzKLiLkHdWPKmrwOSkY0OtvQ0KNam6i9YbJCDBXYY7gbbgvdsbau9v2Z5wkk3HcRRslQrmOuU3e00fjgqSLAz');
+  var checkoutButton = document.getElementById('checkout-button-price_1Iha6MHSkTK1ylzKLQHRVDMv');
+  checkoutButton.addEventListener('click', function () {
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1Iha6MHSkTK1ylzKLQHRVDMv', quantity: 1}],
+      mode: 'payment',
+      successUrl: "https://www.h-t-chassaing.com/stripe_success-fr.html",
+      cancelUrl: "https://www.h-t-chassaing.com/stripe_canceled-fr.html",
+    })
+    .then(function (result) {
+      if (result.error) {
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
+<br>
+
+
+        
+        
+        <footer>
+        
+            <span class="copyright">&copy;&nbsp;2022 Hélène et Thomas Chassaing&nbsp;|&nbsp;<a class="copyinfo" href="/information-fr.html">Mentions légales</a></span>
+        
+        </footer>
+    </div>
+  </body>
+</html>

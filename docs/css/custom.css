@@ -106,7 +106,7 @@ h3 {
    display: flex;
    flex-wrap: wrap;
    gap: var(--s2);
-   --threshold: 45rem;
+   --threshold: 33rem;
 }
 
 /* Flexible images */
@@ -208,22 +208,32 @@ h3 {
    from {opacity: .4}
    to {opacity: 1}
 }
+.with-sidebar {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: var(--s1);
+}
+.with-sidebar > :last-child {
+   flex-basis: 24ch; 
+   flex-grow: 1;
+}
+.with-sidebar > :first-child {
+   flex-basis: 0;
+   flex-grow: 999;
+   border-right: solid 1px;
+   border-right-color: #ddd;   
+   min-inline-size: 70%;
+}
+.sidebar {
+   background-color: #DDD;
+   padding: 2rem var(--s1);
+}
 
 /* Blog Page */
 
-.image-container:hover {
-  background-color: #FFF;
-}
-
-.image {
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: crosshair;
-  display: block;
-}
-
 .blog-post a {
-  text-decoration: underline;
+   text-decoration: underline;
 }
 
 /* Donation Page */
@@ -350,6 +360,11 @@ h3 {
 @media only screen and (max-width: 500px) {
   .menulabel {
     display: none;
-  }
+   }
 }
 
+@media only screen and (max-width: 860px) {
+  .with-sidebar > :first-child {
+    border-right: none;
+   }
+}
