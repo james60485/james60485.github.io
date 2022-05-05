@@ -228,6 +228,7 @@ h3 {
 .sidebar {
    background-color: #DDD;
    padding: 2rem var(--s1);
+   text-decoration: underline;
 }
 
 /* Blog Page */
