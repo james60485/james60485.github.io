@@ -236,6 +236,11 @@ h3 {
 .blog-post a {
    text-decoration: underline;
 }
+.mobile-blog-title {
+   display: none;
+   font-size: small;
+   margin-left: 4rem;
+}
 
 /* Donation Page */
 
@@ -362,8 +367,12 @@ h3 {
   .menulabel {
     display: none;
    }
+  .mobile-blog-title {
+    display: inline;
+    font-size: small;
+    margin-left: 4rem;  
+   }
 }
-
 @media only screen and (max-width: 860px) {
   .with-sidebar > :first-child {
     border-right: none;
