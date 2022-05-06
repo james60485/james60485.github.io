@@ -89,8 +89,8 @@ h3 {
 
 /* Universal image margin */
 .image-margin {
-   margin: var(--s1);
-   max-width: 92%;
+   margin: var(--s0);
+   max-width: 90%;
 }
 
 /* Buttons */
@@ -222,13 +222,19 @@ h3 {
    flex-basis: 0;
    flex-grow: 999;
    border-right: solid 1px;
-   border-right-color: #ddd;   
+   border-right-color: #DDD;   
    min-inline-size: 70%;
 }
 .sidebar {
-   background-color: #DDD;
+   background-color: #F8F8F8;
    padding: 2rem var(--s1);
    text-decoration: underline;
+}
+.notabene {
+   margin-left: var(--s2);
+   width: fit-content;
+   border: solid 1px;
+   border-color: #85E0B3;
 }
 
 /* Blog Page */
