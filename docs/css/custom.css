@@ -225,17 +225,16 @@ h3 {
    border-right-color: #DDD;   
    min-inline-size: 70%;
 }
-.notabene {
+.desktop-menu {
    margin-left: var(--s1);
-   color: #85E0B3;
+   color: #4D8073;
    font-family: Helvetica;
-   font-size: small;
    font-weight: 100;
-   font-stretch: expanded;
 }
 .sidebar {
    font-size: small;
-   background-color: #F8F8F8;
+   text-decoration: none;
+   background-color: #F0F0F0;
    padding: var(--s-3);
 }
 
@@ -371,18 +370,30 @@ h3 {
 
 /* Media queries for small screens */
 
+/* Suppress hamburger for desktop index
+   Suppress sidebar for small screens and non-index */
+
 @media only screen and (max-width: 500px) {
-  .menulabel {
-    display: none;
+   .menulabel {
+      display: none;
    }
-  .mobile-blog-title {
-    display: inline;
-    font-size: small;
-    margin-left: 4rem;  
+   .mobile-blog-title {
+     display: inline;
+     font-size: small;
+     margin-left: 4rem;  
    }
 }
 @media only screen and (max-width: 860px) {
-  .with-sidebar > :first-child {
-    border-right: none;
+   .with-sidebar > :first-child {
+     border-right: none;
+   }
+   .desktop-only {
+     display: none;
    }
 }
+@media only screen and (min-width: 861px) {
+   .small-or-non-index {
+     display: none;   
+   }
+}
+
