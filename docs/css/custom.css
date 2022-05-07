@@ -211,7 +211,7 @@ h3 {
 .with-sidebar {
    display: flex;
    flex-wrap: wrap;
-   align-items: center;
+   align-items: stretch;
    gap: var(--s1);
 }
 .with-sidebar > :last-child {
@@ -225,16 +225,18 @@ h3 {
    border-right-color: #DDD;   
    min-inline-size: 70%;
 }
-.sidebar {
-   background-color: #F8F8F8;
-   padding: 2rem var(--s1);
-   text-decoration: underline;
-}
 .notabene {
-   margin-left: var(--s2);
-   width: fit-content;
-   border: solid 1px;
-   border-color: #85E0B3;
+   margin-left: var(--s1);
+   color: #85E0B3;
+   font-family: Helvetica;
+   font-size: small;
+   font-weight: 100;
+   font-stretch: expanded;
+}
+.sidebar {
+   font-size: small;
+   background-color: #F8F8F8;
+   padding: var(--s-3);
 }
 
 /* Blog Page */
