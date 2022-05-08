@@ -217,6 +217,7 @@ h3 {
 .with-sidebar > :last-child {
    flex-basis: 24ch; 
    flex-grow: 1;
+   margin-top: -1.5rem;
 }
 .with-sidebar > :first-child {
    flex-basis: 0;
@@ -227,15 +228,19 @@ h3 {
 }
 .desktop-menu {
    margin-left: var(--s1);
-   color: #4D8073;
+   color: #57756E;
    font-family: Helvetica;
    font-weight: 100;
 }
 .sidebar {
+   line-height: 1;
    font-size: small;
-   text-decoration: none;
    background-color: #F0F0F0;
    padding: var(--s-3);
+}
+.side-item {
+   color: #57756E;
+   font-size: 1rem;
 }
 
 /* Blog Page */
