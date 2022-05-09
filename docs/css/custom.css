@@ -89,8 +89,8 @@ h3 {
 
 /* Universal image margin */
 .image-margin {
-   margin: var(--s0);
-   max-width: 90%;
+   margin: var(--s1);
+   max-width: 92%;
 }
 
 /* Buttons */
@@ -106,7 +106,7 @@ h3 {
    display: flex;
    flex-wrap: wrap;
    gap: var(--s2);
-   --threshold: 33rem;
+   --threshold: 45rem;
 }
 
 /* Flexible images */
@@ -180,6 +180,7 @@ h3 {
 }
 .lang {
    margin-top: 0.1rem;
+   margin-left: 0.5rem;
    color: #808080;
    opacity: 0.5;
 }
@@ -208,52 +209,14 @@ h3 {
    from {opacity: .4}
    to {opacity: 1}
 }
-.with-sidebar {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: stretch;
-   gap: var(--s1);
-}
-.with-sidebar > :last-child {
-   flex-basis: 24ch; 
-   flex-grow: 1;
-   margin-top: 0.5rem;
-}
-.with-sidebar > :first-child {
-   flex-basis: 0;
-   flex-grow: 999;
-   border-right: solid 1px;
-   border-right-color: #DDD;   
-   min-inline-size: 70%;
-}
-.desktop-menu {
-   margin-left: var(--s1);
-   font-family: Arial;
-   font-size: 0.9rem;
-   font-weight: 800;
-   color: gray;
-}
-.sidebar {
-   line-height: 1.25;
-   font-size: 0.85rem;
-   background-color: #F0F0F0;
-   padding: var(--s-3);
-}
-.side-item {
-   font-style: italic;
-   font-weight: 700;
-   text-decoration: underline; 
-}
 
 /* Blog Page */
 
 .blog-post a {
-   text-decoration: underline;
+  text-decoration: underline;
 }
 .mobile-blog-title {
    display: none;
-   font-size: small;
-   margin-left: 4rem;
 }
 
 /* Donation Page */
@@ -377,30 +340,14 @@ h3 {
 
 /* Media queries for small screens */
 
-/* Suppress hamburger for desktop index
-   Suppress sidebar for small screens and non-index */
-
 @media only screen and (max-width: 500px) {
-   .menulabel {
-      display: none;
-   }
-   .mobile-blog-title {
-     display: inline;
-     font-size: small;
-     margin-left: 4rem;  
-   }
-}
-@media only screen and (max-width: 860px) {
-   .with-sidebar > :first-child {
-     border-right: none;
-   }
-   .desktop-only {
-     display: none;
-   }
-}
-@media only screen and (min-width: 861px) {
-   .small-or-non-index {
-     display: none;   
-   }
+  .menulabel {
+    display: none;
+  }
+  .mobile-blog-title {
+    display: inline;
+    font-size: small;
+    margin-left: 4rem;
+  }
 }
 
