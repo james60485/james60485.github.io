@@ -218,7 +218,34 @@ h3 {
 .mobile-blog-title {
    display: none;
 }
-
+.with-sidebar {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: stretch;
+   gap: var(--s1);
+}
+.with-sidebar > :last-child {
+   flex-basis: 24ch; 
+   flex-grow: 1;
+   margin-top: 0.5rem;
+}
+.with-sidebar > :first-child {
+   flex-basis: 0;
+   flex-grow: 999;
+   border-right: solid 1px;
+   border-right-color: #DDD;   
+   min-inline-size: 70%;
+}
+.sidebar {
+   line-height: 1.25;
+   font-size: 0.85rem;
+   padding: var(--s-3);
+}
+.side-item {
+   font-style: italic;
+   font-weight: 400;
+   text-decoration: none; 
+}
 /* Donation Page */
 
 .donations {
@@ -350,4 +377,8 @@ h3 {
     margin-left: 4rem;
   }
 }
-
+@media only screen and (max-width: 860px) {
+   .with-sidebar > :first-child {
+     border-right: none;
+  }
+}
