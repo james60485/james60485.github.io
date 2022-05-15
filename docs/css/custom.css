@@ -242,10 +242,18 @@ h3 {
    padding: var(--s-3);
 }
 .side-item {
-   font-style: italic;
    font-weight: 400;
    text-decoration: none; 
 }
+.sidebar-hr {
+   height: 1px;
+   width: 18ch;
+   color: #DDD;
+   background-color: #DDD;
+   border-width: 0;
+   margin-left: 0;
+}
+
 /* Donation Page */
 
 .donations {
