@@ -225,7 +225,7 @@ h3 {
    gap: var(--s1);
 }
 .with-sidebar > :last-child {
-   flex-basis: 24ch; 
+   flex-basis: 22ch; 
    flex-grow: 1;
    margin-top: 0.5rem;
 }
@@ -244,6 +244,9 @@ h3 {
 .side-item {
    font-weight: 400;
    text-decoration: none; 
+}
+.side-item:hover {
+   color: #000;
 }
 .sidebar-hr {
    height: 1px;
@@ -275,8 +278,7 @@ h3 {
 /* Contact Page */
 
 .mailto {
-   color: #808080;
-   opacity: 0.5;
+   color: #4169E1;
 }
 .mailto:hover {
    color: #000;
