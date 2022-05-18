@@ -227,7 +227,7 @@ h3 {
 .with-sidebar > :last-child {
    flex-basis: 22ch; 
    flex-grow: 1;
-   margin-top: -0.5rem;
+   margin-top: -0.35rem;
 }
 .with-sidebar > :first-child {
    flex-basis: 0;
