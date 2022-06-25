@@ -137,11 +137,11 @@ h3 {
 }
 .float-right {
    float: right;
-   margin-right: calc(0.25rem + 1vw);
+   margin-right: 0.5rem;
 }
 .menulabel {
    font-size: 0.9rem;
-   margin-top: 0.25rem;
+   margin-top: 0.15rem;
    color: #808080;
 }
 .menuicon {
@@ -179,7 +179,6 @@ h3 {
    top: 3rem;
 }
 .lang {
-   margin-top: 0.1rem;
    margin-left: 0.5rem;
    color: #808080;
    opacity: 0.5;
